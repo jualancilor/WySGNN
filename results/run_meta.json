@@ -1,0 +1,67 @@
+{
+  "git_sha": "N/A (not a git repository)",
+  "config_hash": "3182619fd328",
+  "seed": 0,
+  "env": {
+    "torch": "2.10.0",
+    "torch_geometric": "2.8.0",
+    "e3nn": "0.6.0",
+    "pymatgen": "2026.5.4",
+    "spglib": "2.7.0",
+    "ase": "3.28.0",
+    "numpy": "2.4.1",
+    "python": "3.14.2"
+  },
+  "config": {
+    "seed": 0,
+    "data": {
+      "source": "synthetic",
+      "n_structures": 100,
+      "cutoff": 5.0,
+      "lmax": 2,
+      "mul": 4,
+      "symprec": 0.001,
+      "splits_path": "results/splits.json"
+    },
+    "model": {
+      "lmax": 2,
+      "mul": 4,
+      "num_layers": 2,
+      "cutoff": 5.0,
+      "sh_lmax": 2,
+      "out_sh_lmax": 3,
+      "num_basis": 8,
+      "radial_hidden": 64,
+      "avg_num_neighbors": 12.0
+    },
+    "baseline": {
+      "hidden": 64,
+      "num_layers": 3,
+      "num_basis": 8
+    },
+    "train": {
+      "epochs": 70,
+      "lr": 0.005,
+      "weight_decay": 0.0001,
+      "batch_size": 16,
+      "ema_decay": 0.999,
+      "patience": 20,
+      "min_epochs": 15
+    },
+    "eval": {
+      "violation_rel_thresh": 0.01,
+      "sample_fractions": [
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        1.0
+      ]
+    }
+  },
+  "dataset": {
+    "source": "synthetic",
+    "n": 100,
+    "standardizer_scale": 0.7032962631693802
+  }
+}

@@ -1,0 +1,11 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Model & Params & Frob.\ rel.\ err.\ $\downarrow$ & MAE $\downarrow$ & $d_{33}$ MAE $\downarrow$ & Sym.\ viol.\ rate $\downarrow$ \\
+\midrule
+Invariant baseline (CGCNN/MEGNet-style) & 62,994 & 1.069 & 0.713 & 1.243 & 0.979 \\
+Invariant + Neumann readout & 62,994 & 0.826 & 0.331 & 0.799 & 0.000 \\
+Equivariant (no projections) & 107,756 & 0.880 & 0.359 & 0.896 & 0.000 \\
+Equivariant + Wyckoff & 107,756 & 0.880 & 0.359 & 0.896 & 0.000 \\
+WySGNN (Wyckoff + Neumann) & 107,756 & 0.880 & 0.359 & 0.896 & 0.000 \\
+\bottomrule
+\end{tabular}

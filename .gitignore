@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# LaTeX build artifacts (keep main.tex, *.sty, *.bib, generated tables/macros)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.toc
+paper/c1.log
+paper/c2.log
+paper/c3.log
+paper/compile*.log
+paper/bib*.log
+
+# Large optional data cache
+results/jarvis_piezo.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local assistant settings / working notes
+.claude/
+wysgnn_end_to_end_prompt.md
